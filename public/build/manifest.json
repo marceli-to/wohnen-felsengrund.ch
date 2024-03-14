@@ -1,0 +1,27 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-a980ff68.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/icons/chevron-down.svg": {
+    "file": "assets/chevron-down-3b95e92a.svg",
+    "src": "resources/icons/chevron-down.svg"
+  },
+  "resources/icons/marker.svg": {
+    "file": "assets/marker-fabcc393.svg",
+    "src": "resources/icons/marker.svg"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-4e10d3fe.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-4e10d3fe.css"
+    ],
+    "file": "assets/app-d8ae4a9e.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
