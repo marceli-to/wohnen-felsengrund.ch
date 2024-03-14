@@ -22,7 +22,7 @@
       </x-layout.grid>
     </x-layout.inner>
   </div>
-  <div class="bg-caramel text-white text-xs lg:text-sm py-10">
+  <div class="bg-caramel text-white text-xs lg:text-sm py-10 px-15 md:px-25">
     <x-layout.inner>
       <nav>
         <ul class="flex gap-x-15 lg:gap-x-20">
