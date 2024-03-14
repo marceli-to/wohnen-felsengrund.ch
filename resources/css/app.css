@@ -23,6 +23,10 @@ h2 {
   @apply mb-10 lg:mb-20 
 }
 
+h3 {
+  @apply uppercase font-semi font-semibold text-caramel tracking-wide mb-2
+}
+
 .imprint h2,
 .privacy h2 {
   @apply text-base lg:text-lg

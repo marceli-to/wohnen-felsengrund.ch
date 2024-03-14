@@ -40,7 +40,7 @@ class InquiryUserEmail extends Notification
   {
     return (new MailMessage)
       ->from('noreply@wohnen-felsengrund.ch')
-      ->subject('Ihre Anmeldung Gewerberaum Wohnen Felsengrund')
+      ->subject('Ihre Interesse wohnen-felsengrund.ch')
       ->markdown('mail.inquiry.user', ['data' => $this->data]);
   }
 

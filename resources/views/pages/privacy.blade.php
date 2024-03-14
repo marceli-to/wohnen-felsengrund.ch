@@ -41,7 +41,7 @@
     <p>Für die Verarbeitung der Daten wird im Rahmen des Absendevorgangs Ihre Einwilligung eingeholt und auf diese Datenschutzerklärung verwiesen.</p>
     <p>Die Verarbeitung der personenbezogenen Daten aus der Eingabemaske dient uns allein zur Bearbeitung der Kontaktaufnahme. Die sonstigen während des Absendevorgangs verarbeiteten personenbezogenen Daten dienen dazu, einen Missbrauch des Kontaktformulars zu verhindern und die Sicherheit unserer informationstechnischen Systeme sicherzustellen.</p>
     <strong>Dauer der Speicherung und Widerspruchsrecht</strong><br>
-    <p>Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der personenbezogenen Daten per E-Mail an <a href="mailto:info@apleona.com">info@apleona.com</a> zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
+    <p>Sie haben jederzeit die Möglichkeit, Ihre Einwilligung zur Verarbeitung der personenbezogenen Daten per E-Mail an <a href="mailto:hello@wohnen-felsengrund.ch">hello@wohnen-felsengrund.ch</a> zu widerrufen. In einem solchen Fall kann die Konversation nicht fortgeführt werden.</p>
     <p>Alle personenbezogenen Daten, die im Zuge der Kontaktaufnahme gespeichert wurden, werden in diesem Fall gelöscht.</p>
     
     <h2>Google Analytics</h2>

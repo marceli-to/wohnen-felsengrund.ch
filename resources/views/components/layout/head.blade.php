@@ -20,4 +20,4 @@
 @vite('resources/css/app.css')
 @livewireStyles
 </head>
-<body class="antialiased font-light text-charcoal text-sm md:text-base leading-[1.3] flex min-h-full flex-col">
+<body class="antialiased font-light text-charcoal text-sm md:text-base leading-[1.45] flex min-h-full flex-col">

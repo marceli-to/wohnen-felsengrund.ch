@@ -1,6 +1,6 @@
 <x-mail::message>
   <div class="text-base pb-base">
-    Neuer Interessent
+    Neuer Interessent wohnen-felsengrund.ch
   </div>
   <div class="text-base pb-base">
     <strong>Vorname</strong><br>
@@ -27,13 +27,7 @@
     {{ $data->phone }}
   </div>
   <div class="text-base pb-base">
-    <strong>Gewerberaum</strong><br>
+    <strong>Wohnung</strong><br>
     {{ $data->interest }}
   </div>
-  @if ($data->message)
-    <div class="text-base pb-base">
-      <strong>Nachricht</strong><br>
-      {{ $data->message }}
-    </div>
-  @endif
 </x-mail::message>

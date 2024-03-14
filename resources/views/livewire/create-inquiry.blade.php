@@ -1,7 +1,7 @@
 <form wire:submit="save" class="mt-16 lg:mt-24">
   @if (session()->has('status'))
     <div x-data="{ open: true }" x-show="open">
-      <div class="bg-green-600 text-white font-semi font-normal py-10 px-15 pr-25 fixed top-10 left-10 inline-block w-auto z-[101]">
+      <div class="bg-green-600 rounded-sm text-white font-semi font-normal py-15 pl-15 pr-30 fixed top-10 left-10 inline-block w-auto z-[101]">
         <div class="relative">
           <a href="javascript:;" x-on:click="open = false">
             Vielen Dank, wir haben Ihre Anfrage erhalten.

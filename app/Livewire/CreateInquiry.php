@@ -49,7 +49,7 @@ class CreateInquiry extends Component
       ])
     );
 
-    $interest_string = implode(' ', $this->interest);
+    $interest_string = implode(', ', $this->interest);
     $inquiry->interest = $interest_string;
     $inquiry->save();
 

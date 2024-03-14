@@ -40,7 +40,7 @@ class InquiryOwnerEmail extends Notification
   {
     return (new MailMessage)
       ->from('noreply@wohnen-felsengrund.ch')
-      ->subject('Interessent Gewerberaum Wohnen Felsengrund')
+      ->subject('Interessent wohnen-felsengrund.ch')
       ->markdown('mail.inquiry.owner', ['data' => $this->data]);
   }
 
