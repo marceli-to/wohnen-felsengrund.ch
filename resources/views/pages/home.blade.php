@@ -15,6 +15,7 @@
     <div class="max-w-4xl">
       <h1>Wohnen im schönen Zürcher Oberland</h1>
       <p>An der Pfaffbergstrasse in Pfäffikon ZH werden ab dem Sommer 2024 zwei moderne Mehrfamilienhäuser, in grüner Umgebung, mit je acht Eigentumswohnungen realisiert – drei im Erdgeschoss, drei im Obergeschoss und zwei im Attikageschoss. Es entstehen 3.5- und 4.5-Zimmerwohnungen, ideal für Paare an ruhiger Lage.</p>
+      <p>Haben wir Ihr Interesse geweckt? Gerne senden wir Ihnen weitere Informationen, sobald die Vermarktung startet. Bitte füllen Sie dazu das Kontaktformular aus.</p>
     </div>
   </x-layout.inner>
 </x-layout.section>

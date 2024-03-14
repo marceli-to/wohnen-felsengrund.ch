@@ -1,4 +1,5 @@
 @import "typo/webfonts.css";
+@import "vendor/mapbox.css";
 @import "vendor/swiper.css";
 @import "vendor/swiper-custom.css";
 
@@ -11,12 +12,20 @@ main {
 }
 
 h1, h2 {
-  @apply uppercase text-caramel text-lg lg:text-xl font-semi font-semibold mb-25 lg:mb-40
+  @apply uppercase text-caramel text-lg lg:text-xl font-semi font-semibold
+}
+
+h1 {
+  @apply mb-25 lg:mb-40
+}
+
+h2 {
+  @apply mb-10 lg:mb-20 
 }
 
 .imprint h2,
 .privacy h2 {
-  @apply mb-10 lg:mb-20 text-base lg:text-lg
+  @apply text-base lg:text-lg
 }
 
 .privacy p {

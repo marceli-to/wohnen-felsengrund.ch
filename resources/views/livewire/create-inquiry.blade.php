@@ -12,63 +12,45 @@
     </div>
   @endif
 
-  <div class="mt-24 mb-16 lg:mb-20">
-    <p><strong>Ich interessiere mich für folgenden Gewerberaum (bitte auswählen):</strong></p>
+  <div class="mt-25 mb-15 lg:mb-20">
+    <p>Ich interessiere mich für folgende Wohnung (bitte auswählen):</p>
   </div>
-  <x-layout.grid class="sm:gap-y-16 lg:gap-x-24 lg:gap-y-16">
+  <x-layout.grid class="sm:gap-y-15 lg:gap-x-25 lg:gap-y-20">
     <x-honeypot />
-    <x-layout.span class="relative">
-      <strong class="flex mb-4">
-        Austrasse 46
-        @error('interest')
-          <x-form.error 
-            message="mind. 1 Option auswählen"
-            class="relative right-auto left-10 h-24 mb-6 top-2"
-            />
-        @enderror
-      </strong>
-      <div class="flex">
-        <div class="flex items-start">
-          <x-form.checkbox name="interest" value="Austrasse 46, 76.3m2" isWire="true" class="mt-2 lg:mt-3" id="interest-763" />
-          <x-form.checkbox-label for="interest-763">76.3 m<sup>2</sup></x-form.checkbox-label>
+    <x-layout.span class="relative !col-span-12 !mb-20 md:!mb-10">
+      @error('interest')
+        <x-form.error 
+          message="mind. 1 Option auswählen"
+          class="relative right-auto left-0 h-24 mb-5 top-2"
+          />
+      @enderror
+      <div class="flex flex-col md:flex-row gap-y-7 md:gap-y-0 md:gap-x-40">
+        <div>
+          <div class="mb-7">
+            <x-form.checkbox name="interest" value="3.5-Zimmerwohnung (Erdgeschoss)" isWire="true" class="-mt-4" id="interest-35-EG" />
+            <x-form.checkbox-label for="interest-35-EG">3.5-Zimmerwohnung (Erdgeschoss)</x-form.checkbox-label>
+          </div>
+          <div>
+            <x-form.checkbox name="interest" value="3.5-Zimmerwohnung (Obergeschoss)" isWire="true" class="-mt-4" id="interest-35-OG" />
+            <x-form.checkbox-label for="interest-35-OG">3.5-Zimmerwohnung (Obergeschoss)</x-form.checkbox-label>
+          </div>
         </div>
-        <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="Austrasse 46, 58.8m2" isWire="true" class="mt-2 lg:mt-3" id="interest-588" />
-          <x-form.checkbox-label for="interest-588">58.8 m<sup>2</sup></x-form.checkbox-label>
-        </div>
-        <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="Austrasse 46, 105.2m2" isWire="true" class="mt-2 lg:mt-3" id="interest-1052" />
-          <x-form.checkbox-label for="interest-1052">105.2 m<sup>2</sup></x-form.checkbox-label>
-        </div>
-      </div>
-    </x-layout.span>
-
-    <x-layout.span class="relative">
-      <strong class="flex mb-4">
-        Austrasse 48
-        @error('interest')
-          <x-form.error 
-            message="mind. 1 Option auswählen"
-            class="relative right-auto left-10 h-24 mb-4 top-2"
-            />
-        @enderror
-      </strong>
-      <div class="flex">
-        <div class="flex items-start">
-          <x-form.checkbox name="interest" value="Austrasse 48, 76.7m2" isWire="true" class="mt-2 lg:mt-3" id="interest-767" />
-          <x-form.checkbox-label for="interest-767">76.7 m<sup>2</sup></x-form.checkbox-label>
-        </div>
-        <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="Austrasse 48, 58.6m2" isWire="true" class="mt-2 lg:mt-3" id="interest-586" />
-          <x-form.checkbox-label for="interest-586">58.6 m<sup>2</sup></x-form.checkbox-label>
-        </div>
-        <div class="flex items-start ml-20">
-          <x-form.checkbox name="interest" value="Austrasse 48, 90.5m2" isWire="true" class="mt-2 lg:mt-3" id="interest-905" />
-          <x-form.checkbox-label for="interest-905">90.5 m<sup>2</sup></x-form.checkbox-label>
+        <div>
+          <div class="mb-7">
+            <x-form.checkbox name="interest" value="4.5-Zimmerwohnung (Erdgeschoss)" isWire="true" class="-mt-4" id="interest-45-EG" />
+            <x-form.checkbox-label for="interest-45-EG">4.5-Zimmerwohnung (Erdgeschoss)</x-form.checkbox-label>
+          </div>
+          <div class="mb-7">
+            <x-form.checkbox name="interest" value="4.5-Zimmerwohnung (Obergeschoss)" isWire="true" class="-mt-4" id="interest-45-OG" />
+            <x-form.checkbox-label for="interest-45-OG">4.5-Zimmerwohnung (Obergeschoss)</x-form.checkbox-label>
+          </div>
+          <div>
+            <x-form.checkbox name="interest" value="3.5-Zimmerwohnung (Attikageschoss)" isWire="true" class="-mt-4" id="interest-35-AT" />
+            <x-form.checkbox-label for="interest-35-AT">4.5-Zimmerwohnung (Attikageschoss)</x-form.checkbox-label>
+          </div>
         </div>
       </div>
     </x-layout.span>
-
     <x-layout.span class="relative">
       <x-form.input name="firstname" placeholder="Vorname*" isWire="true" />
       @error('firstname')
@@ -105,9 +87,6 @@
         <x-form.error message="{{ $message }}" />
       @enderror 
     </x-layout.span>
-    <x-layout.span>
-      <x-form.textarea name="message" placeholder="Nachricht" isWire="true" />
-    </x-layout.span>
     <x-layout.span class="relative sm:!col-span-12">
       @error('privacy')
         <x-form.error 
@@ -122,12 +101,12 @@
         </x-form.checkbox-label>
       </div>
     </x-layout.span>
-    <x-layout.span class="sm:col-span-12 mt-15">
+    <x-layout.span class="sm:col-span-12 mt-5">
       <x-form.button>
         <div wire:loading>
           <x-form.spinner class="mr-12 text-olive" />
         </div>
-        Senden
+        Absenden
       </x-form.button>
     </x-layout.span>
   </x-layout.grid>

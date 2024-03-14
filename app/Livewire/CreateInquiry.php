@@ -46,7 +46,6 @@ class CreateInquiry extends Component
         'street',
         'location',
         'phone',
-        'message'
       ])
     );
 

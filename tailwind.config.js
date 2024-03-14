@@ -23,7 +23,7 @@ export default {
 
       fontFamily: {
         semi: ['navigo', ...defaultTheme.fontFamily.sans],
-        ligth: ['navigo', ...defaultTheme.fontFamily.sans],
+        light: ['navigo', ...defaultTheme.fontFamily.sans],
       },
 
       fontSize: {

@@ -3,7 +3,7 @@ const initMap = () => {
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
-      center: [8.518915948100124,47.363909484198],
+      center: [8.795095753175588,47.3665877316877658],
       zoom: 13
   });
   map.addControl(new mapboxgl.NavigationControl());
@@ -15,11 +15,11 @@ const initMap = () => {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [8.518915948100124,47.363909484198]
+        coordinates: [8.795095753175588,47.3665877316877658]
       },
       properties: {
-        title: 'Nidum Sempach',
-        description: 'Zürich'
+        title: 'Wohnen Felsengrund',
+        description: 'Pfäffikon ZH'
       }
     }]
   };
@@ -54,29 +54,5 @@ const loadMapScript = () => {
 
 loadMapScript();
 
-// const isInViewport = (selector) => {
-//   const mapEl = document.getElementById(selector);
-//   if (mapEl === null) {
-//     return;
-//   }
-//   const rect = mapEl.getBoundingClientRect();
-//   const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
-//   const windowWidth = (window.innerWidth || document.documentElement.clientWidth);
-//   const vertInView = (rect.top <= windowHeight) && ((rect.top + rect.height) >= 0);
-//   const horInView = (rect.left <= windowWidth) && ((rect.left + rect.width) >= 0);
-//   return (vertInView && horInView);
-// };
-
-// if (isInViewport('map')) {
-//   loadMapScript();
-// }
-
-// const scrollEventHandler = () => {
-//   if (isInViewport('map')) {
-//     loadMapScript();
-//     window.removeEventListener('scroll', scrollEventHandler);
-//   }
-// }
-// window.addEventListener('scroll', scrollEventHandler);
 
 
