@@ -39,7 +39,7 @@ class InquiryUserEmail extends Notification
   public function toMail($notifiable)
   {
     return (new MailMessage)
-      ->from('noreply@wohnen-felsengrund.ch')
+      ->from(env('MAIL_FROM_ADDRESS'))
       ->subject('Ihre Interesse wohnen-felsengrund.ch')
       ->markdown('mail.inquiry.user', ['data' => $this->data]);
   }

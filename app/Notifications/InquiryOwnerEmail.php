@@ -39,7 +39,7 @@ class InquiryOwnerEmail extends Notification
   public function toMail($notifiable)
   {
     return (new MailMessage)
-      ->from('noreply@wohnen-felsengrund.ch')
+      ->from(env('MAIL_FROM_ADDRESS'))
       ->subject('Interessent wohnen-felsengrund.ch')
       ->markdown('mail.inquiry.owner', ['data' => $this->data]);
   }
