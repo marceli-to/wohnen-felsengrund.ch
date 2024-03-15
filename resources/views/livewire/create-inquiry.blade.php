@@ -46,7 +46,7 @@
           </div>
           <div>
             <x-form.checkbox name="interest" value="3.5-Zimmerwohnung (Attikageschoss)" isWire="true" class="-mt-4" id="interest-35-AT" />
-            <x-form.checkbox-label for="interest-35-AT">4.5-Zimmerwohnung (Attikageschoss)</x-form.checkbox-label>
+            <x-form.checkbox-label for="interest-35-AT">3.5-Zimmerwohnung (Attikageschoss)</x-form.checkbox-label>
           </div>
         </div>
       </div>
