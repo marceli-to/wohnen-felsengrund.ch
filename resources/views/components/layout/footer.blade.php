@@ -42,13 +42,13 @@
       <nav>
         <ul class="flex gap-x-15 lg:gap-x-20">
           <li>
-            <a href="{{ route('page.imprint') }}" title="Impressum" class="{{ Route::is('page.imprint') ? 'text-serene' : '' }} hover:text-serene transition-colors">Impressum</a>
+            <a href="{{ route('page.imprint') }}" title="Impressum">Impressum</a>
           </li>
           <li>
-            <a href="{{ route('page.privacy') }}" title="Datenschutz" class="{{ Route::is('page.privacy') ? 'text-serene' : '' }} hover:text-serene transition-colors">Datenschutz</a>
+            <a href="{{ route('page.privacy') }}" title="Datenschutz">Datenschutz</a>
           </li>
           <li>
-            <a href="https://stoz.ch" target="_blank" title="stoz.ch" rel="noopener" class="hover:text-serene transition-colors">design by stoz</a>
+            <a href="https://stoz.ch" target="_blank" title="stoz.ch" rel="noopener">design by stoz</a>
           </li>
         </ul>
       </nav>
