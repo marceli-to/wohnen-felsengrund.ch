@@ -3,9 +3,8 @@ const initMap = () => {
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
-      // , 
-      center: [8.794989138029043,47.36567744298538],
-      zoom: 13
+      center: [8.794962809625000,47.365660726960200],
+      zoom: 20
   });
   map.addControl(new mapboxgl.NavigationControl());
   map.scrollZoom.disable();
@@ -16,7 +15,7 @@ const initMap = () => {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [8.794989138029043,47.36567744298538]
+        coordinates: [8.794962809625000,47.365660726960200]
       },
       properties: {
         title: 'Wohnen Felsengrund',
