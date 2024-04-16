@@ -1,0 +1,27 @@
+<header 
+  class="bg-white h-76 md:h-120 w-full sticky top-0 z-[100] shadow-sm transition-all"
+  :class="{ '!shadow-none': menu === true }">
+  <div 
+    :class="{ '!h-[300px]': menu === true }"
+    class="max-w-6xl mx-auto w-full bg-white h-full md:!h-120 flex justify-between items-start md:items-center px-15 pt-20 md:pt-0">
+    <a 
+      href="javascript:;" 
+      x-on:click="menu = ! menu" 
+      title="{{ "Menü anzeigen" | trans }}"
+      :class="{ 'is-active': menu === true }"
+      class="group mt-10 flex justify-center md:hidden text-charcoal">
+      <span x-show="menu === false">
+        {{ partial:icons/burger class="w-24 h-auto" }}
+      </span>
+      <span x-cloak x-show="menu === true">
+        {{ partial:icons/cross class="w-20 h-auto" }}
+      </span>
+    </a>
+    {{ partial:menu/wrapper }}
+    <a 
+      href="/"
+      title="Startseite">
+      {{ partial:icons/logo class="block w-80 md:w-125 h-auto" }}
+    </a>
+  </div>
+</header>
