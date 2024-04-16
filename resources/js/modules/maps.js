@@ -1,10 +1,15 @@
 const initMap = () => {
   mapboxgl.accessToken = 'pk.eyJ1IjoibWFyY2VsaXRvb29vIiwiYSI6ImNrMHNsdmhwdjAzcjIzZ3BldTlqdWhnaWEifQ.EWZE383Tn4xBt0E5pSXh6Q';
+
+  // get zoom from data attribute from #map element
+
+  const zoom = document.getElementById('map').dataset.zoom;
+
   var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/marcelitoooo/ck16ms7m51nlo1cmwnqrbjuyq?optimize=true',
       center: [8.794962809625000,47.365660726960200],
-      zoom: 13
+      zoom: zoom
   });
   map.addControl(new mapboxgl.NavigationControl());
   map.scrollZoom.disable();

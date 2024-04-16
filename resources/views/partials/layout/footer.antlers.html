@@ -1,9 +1,9 @@
-{{ partial:misc/map }}
+{{ partial:misc/map zoom="{{ slug == 'lage' ? '15' : '13' }}" }}
 <footer>
 
   {{ partial:layout/inner }}
 
-    {{ partial:layout/grid class="leading-[1.35]" }}
+    {{ partial:layout/grid class="text-sm md:text-base eading-[1.35]" }}
 
       {{ partial:layout/span class="md:!col-span-6 lg:!col-span-5" }}
         <h3>Bauherrschaft</h3>

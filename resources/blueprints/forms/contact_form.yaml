@@ -5,6 +5,21 @@ tabs:
       -
         fields:
           -
+            handle: firstname
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Vorname
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
             handle: name
             field:
               input_type: text
@@ -19,7 +34,36 @@ tabs:
               hide_display: false
               validate:
                 - required
-              localizable: false
+          -
+            handle: street_number
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: Strasse/Nr.
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+          -
+            handle: location
+            field:
+              input_type: text
+              antlers: false
+              type: text
+              display: PLZ/Ort
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
           -
             handle: email
             field:
@@ -36,7 +80,19 @@ tabs:
               validate:
                 - required
                 - email
-              localizable: false
+          -
+            handle: phone
+            field:
+              input_type: tel
+              antlers: false
+              type: text
+              display: Telefon
+              icon: text
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: message
             field:
@@ -49,4 +105,19 @@ tabs:
               visibility: visible
               replicator_preview: true
               hide_display: false
-              localizable: false
+          -
+            handle: privacy
+            field:
+              inline: false
+              default: '0'
+              type: checkboxes
+              display: Privacy
+              icon: checkboxes
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              validate:
+                - required
+                - accepted

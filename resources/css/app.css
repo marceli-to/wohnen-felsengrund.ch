@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 h1 {
-  @apply mb-25 lg:mb-40 tracking-wide
+  @apply mb-30 lg:mb-40 tracking-wide
 }
 
 h2 {
