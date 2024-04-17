@@ -1,13 +1,24 @@
 title: Settings
 fields:
   -
+    handle: show_maps
+    field:
+      default: true
+      type: toggle
+      display: 'Show maps'
+      icon: toggle
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
     handle: debug
     field:
       default: false
       type: toggle
       display: Debug
       icon: toggle
-      localizable: false
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -21,7 +32,6 @@ fields:
       type: template
       display: Template
       icon: template
-      localizable: false
       listable: hidden
       instructions_position: above
       visibility: visible
@@ -35,7 +45,6 @@ fields:
       type: template
       display: Layout
       icon: template
-      localizable: false
       listable: hidden
       instructions_position: above
       visibility: visible

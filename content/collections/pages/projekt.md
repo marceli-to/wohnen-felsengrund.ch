@@ -4,7 +4,7 @@ blueprint: page
 title: Projekt
 debug: false
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1713272499
+updated_at: 1713344901
 template: projekt
 page_elements:
   -
@@ -37,4 +37,5 @@ page_elements:
         enabled: true
     type: gallery
     enabled: true
+show_maps: true
 ---

@@ -1,11 +1,12 @@
-
-<label for="{{ id }}">
+<label for="{{ id }}" class="flex items-start sm:items-center {{ error ? 'text-red-600' : '' }}">
   <input 
     type="checkbox" 
     name="{{ field }}" 
     id="{{ id }}"
+    {{ if value }}
+      checked
+    {{ /if }}
     value="1"
-    checked="{{ checked ? true : false }}"
-    class="rounded-sm w-14 h-14 lg:w-20 lg:h-20 !ring-0 focus:ring-0 !ring-offset-0 !outline-none !border-none text-charcoal !bg-white accent-charcoal">
-    {{ label }}
+    class="rounded-sm mt-2 mr-10 w-18 h-18 bg-white opacity-100 accent-charcoal !ring-0 !border-none !shadow-none">
+    <span>Ich habe die <a href="/datenschutz" target="_blank" class="inline-block mx-4 underline underline-offset-4 decoration-1 hover:no-underline">Datenschutzerklärung</a> gelesen und akzeptiere diese</span>
 </label>

@@ -1,9 +1,9 @@
 <header 
-  class="bg-white h-76 md:h-120 w-full sticky top-0 z-[100] shadow-sm transition-all"
+  class="bg-white h-76 md:h-120 w-full sticky top-0 z-[100] shadow-md md:!shadow-md transition-all"
   :class="{ '!shadow-none': menu === true }">
   <div 
-    :class="{ '!h-[300px]': menu === true }"
-    class="max-w-6xl mx-auto w-full bg-white h-full md:!h-120 flex justify-between items-start md:items-center px-15 pt-20 md:pt-0">
+    :class="{ '!h-[320px] shadow-md': menu === true }"
+    class="max-w-6xl mx-auto w-full bg-white h-full md:!h-120 md:!shadow-none flex justify-between items-start md:items-center px-15 pt-20 md:pt-0">
     <a 
       href="javascript:;" 
       x-on:click="menu = ! menu" 

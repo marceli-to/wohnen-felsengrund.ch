@@ -108,16 +108,14 @@ tabs:
           -
             handle: privacy
             field:
-              inline: false
-              default: '0'
-              type: checkboxes
+              default: false
+              type: toggle
               display: Privacy
-              icon: checkboxes
+              icon: toggle
               listable: hidden
               instructions_position: above
               visibility: visible
               replicator_preview: true
               hide_display: false
               validate:
-                - required
                 - accepted

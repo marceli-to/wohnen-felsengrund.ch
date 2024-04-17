@@ -1,4 +1,6 @@
-{{ partial:misc/map zoom="{{ slug == 'lage' ? '15' : '13' }}" }}
+{{ if show_maps }}
+  {{ partial:misc/map zoom="{{ slug == 'lage' ? '15' : '13' }}" }}
+{{ /if }}
 <footer>
 
   {{ partial:layout/inner }}
