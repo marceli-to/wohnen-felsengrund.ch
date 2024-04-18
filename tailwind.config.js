@@ -30,12 +30,14 @@ export default {
       },
 
       fontSize: {
+        // tiny, 10px
+        'tiny': '0.625rem', // 10px
         'xs': '0.8125rem', // 13px
         'sm': '0.875rem', // 14px
         'base': '1rem', // 16px
         'md': '1.125rem', // 18px
         'lg': '1.5rem', // 24px
-        'xl': '2.125rem', // 34px
+        '2xl': '2.125rem', // 34px
       },
 
     },

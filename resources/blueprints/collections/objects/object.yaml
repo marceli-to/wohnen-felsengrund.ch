@@ -63,10 +63,10 @@ tabs:
             handle: floor
             field:
               options:
-                ug: Untergeschoss
-                eg: Erdgeschoss
-                1.og: '1. Obergeschoss'
-                2.og: '2. Obergeschoss'
+                ug: 'UG'
+                eg: 'EG'
+                1.og: '1. OG'
+                2.og: '2. OG'
               taggable: false
               push_tags: false
               multiple: false
