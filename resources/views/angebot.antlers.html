@@ -1,9 +1,19 @@
 {{ partial:layout/section class="bg-gold"}}
+
   {{ partial:layout/inner class="text-white" }}
+
     <h1 class="text-white">Angebot</h1>
+
+    {{ partial:objects/filter }}
+
     {{ partial:objects/building_1 }}
+
     {{ partial:objects/building_2 }}
+
     {{ partial:objects/basement }}
+
     {{ partial:objects/carpark }}
+
   {{ /partial:layout/inner }}
+
 {{ /partial:layout/section }}

@@ -1,14 +1,21 @@
 <thead class="border-b border-b-white">
-  <tr 
-    class="sm:text-sm [&>th]:py-12 [&>th]:pr-6 xs:[&>th]:pr-8 [&>th]:align-middle [&>th]:leading-[1rem] [&>th]:w-auto [&>th]:font-medium">
-    <th class="text-left">Nr.</th>
-    <th class="text-left">Etage</th>
-    <th class="text-left">Zi</th>
-    <th class="text-right">HNF&nbsp;m<sup class="text-tiny">2</sup></th>
-    <th class="text-right">Aussen&nbsp;m<sup class="text-tiny">2</sup></th>
-    <th class="text-right">Keller&nbsp;m<sup class="text-tiny">2</sup></th>
-    <th class="text-right">Verkaufspreis</th>
-    <th class="text-center">Grundriss</th>
-    <th class="text-right !pr-0">Anmeldung</th>
+  <tr class="sm:text-sm [&>th]:py-12 [&>th]:align-middle [&>th]:leading-none [&>th]:font-medium">
+    <th class="text-left w-[10%]">Nr.</th>
+    <th class="text-left w-[8%]">Etage</th>
+    <th class="text-left w-[4%]">
+      {{ type == 'basement' || type == 'carpark' ? '&nbsp;' : 'Zi' }}
+    </th>
+    <th class="text-right w-[10%]">
+      {{ type == 'carpark' ? '&nbsp;' : 'HNF&nbsp;m<sup class="text-tiny">2</sup>' }}
+    </th>
+    <th class="text-right w-[12%]">
+      {{ type == 'carpark' ? '&nbsp;' : 'Aussen&nbsp;m<sup class="text-tiny">2</sup>' }}
+    </th>
+    <th class="text-right w-[12%]">
+      {{ type == 'carpark' ? '&nbsp;' : 'Keller&nbsp;m<sup class="text-tiny">2</sup>' }}
+    </th>
+    <th class="text-right w-[17%]">Verkaufspreis</th>
+    <th class="text-center w-[13%]">Grundriss</th>
+    <th class="text-right w-[14%]">Anmeldung</th>
   </tr>
 </thead>

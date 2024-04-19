@@ -10,7 +10,7 @@
     </h2>
     {{ collection from="objects" as="objects" type:is="tiefgaragenparkplatz" }}
       {{ partial:components/table/table }}
-        {{ partial:components/table/thead }}
+        {{ partial:components/table/thead type="carpark" }}
         {{ objects }}
           {{ partial:components/table/trow }}
             {{ partial:components/table/tcell class="pr-10" }}

@@ -5,8 +5,8 @@ type: tiefgaragenparkplatz
 number: 'MPP 1'
 floor: ug
 price: 9000
-state: available
+state: reserved
 title: 'MPP 1'
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1713345528
+updated_at: 1713528952
 ---
