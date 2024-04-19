@@ -43,8 +43,8 @@ const Iso = (function() {
     // get data set
     const objectData = object.dataset;
 
-    // get iso item data-iso="data.objectNumber" within data-building="data.objectBuilding"
-    const iso = document.querySelector('[data-building="'+objectData.objectBuilding+'"] [data-iso="' + objectData.objectNumber + '"]');
+    // get iso item data-iso="data.objectNumber" within data-iso-building="data.objectBuilding"
+    const iso = document.querySelector('[data-iso-building="'+objectData.objectBuilding+'"] [data-iso="' + objectData.objectNumber + '"]');
 
     // add class '.is-active.is-available' to iso item if it exists
     if (!iso) return;

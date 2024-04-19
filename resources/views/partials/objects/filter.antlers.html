@@ -1,16 +1,16 @@
-{{ partial:layout/grid }}
+{{ partial:layout/grid class="sm:!gap-12 lg:!gap-20 mb-40 lg:mb-60" }}
 
   {{ partial:layout/span class="md:!col-span-3" }}
   <div class="uppercase font-medium">Verfügbarkeit</div>
     <div>
       <select 
         class="js-filter-attribute appearance-none !outline-none bg-charcoal rounded-sm font-medium text-white py-10 px-16 mt-10 w-full" 
-        data-filterType="state" 
+        data-filterType="object-state" 
         aria-label="Verfügbarkeit">
         <option value="NULL">Alle Wohnungen</option>
         <option value="available">frei</option>
         <option value="reserved">reserviert</option>
-        <option value="taken">verkauft</option>
+        <option value="sold">verkauft</option>
       </select>
     </div>
   {{ /partial:layout/span }}
@@ -20,7 +20,7 @@
     <div>
       <select 
         class="js-filter-attribute appearance-none !outline-none bg-charcoal rounded-sm font-medium text-white py-10 px-16 mt-10 w-full" 
-        data-filterType="rooms" 
+        data-filterType="object-rooms" 
         aria-label="Zimmer">
         <option value="NULL">Alle Zimmer</option>
         <option value="3.5">3.5</option>
@@ -34,7 +34,7 @@
     <div>
       <select 
         class="js-filter-attribute appearance-none !outline-none bg-charcoal rounded-sm font-medium text-white py-10 px-16 mt-10 w-full"
-        data-filterType="building" 
+        data-filterType="object-building" 
         aria-label="Haus">
         <option value="NULL">Alle Häuser</option>
         <option value="1">Pfaffenbergstrasse 2</option>
@@ -48,7 +48,7 @@
     <div>
       <select 
         class="js-filter-attribute appearance-none !outline-none bg-charcoal rounded-sm font-medium text-white py-10 px-16 mt-10 w-full" 
-        data-filterType="floor" 
+        data-filterType="object-floor" 
         aria-label="Etage">
         <option value="NULL">Alle Etagen</option>
         <option value="eg">EG</option>
@@ -58,8 +58,8 @@
     </div>
   {{ /partial:layout/span }}
   
-  {{ partial:layout/span }}
-    <button class="js-btn-reset">
+  {{ partial:layout/span class="md:!col-span-3" }}
+    <button class="js-btn-reset bg-graphite rounded-sm font-medium flex w-full text-white py-10 px-15 hover:bg-charcoal transition-colors">
       Filter zurücksetzen
     </button>
   {{ /partial:layout/span }}
