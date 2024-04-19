@@ -2,6 +2,7 @@
 @import "vendor/mapbox.css";
 @import "vendor/swiper.css";
 @import "vendor/swiper-custom.css";
+@import "components/iso.css";
 
 @tailwind base;
 @tailwind components;

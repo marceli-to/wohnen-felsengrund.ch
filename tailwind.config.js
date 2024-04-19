@@ -21,6 +21,7 @@ export default {
       colors: {
         'gold': '#887147',
         'charcoal': '#464645',
+        'taupe': '#DBD0BC',
       },
 
       fontFamily: {

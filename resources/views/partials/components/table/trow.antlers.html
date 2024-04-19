@@ -1,3 +1,8 @@
-<tr class="border-b border-b-white">
+<tr 
+  data-object
+  data-object-building="{{ building}}"
+  data-object-number="{{ number }}"
+  data-object-state="{{ state }}"
+  class="border-b border-b-white bg-transparent hover:bg-taupe hover:bg-opacity-20 transition-all duration-150">
   {{ slot }}
 </tr>
