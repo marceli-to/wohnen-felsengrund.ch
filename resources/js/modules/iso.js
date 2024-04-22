@@ -4,6 +4,7 @@ const Iso = (function() {
     body: 'body',
     object: '[data-object]',
     iso: '[data-iso]',
+    floor: '[data-iso-floor]',
   };
 
   const initialize = function() {
@@ -11,6 +12,16 @@ const Iso = (function() {
   };
 
   const bind = function() {
+
+    // Event listeners for 'selectors.floor'
+    document.querySelectorAll(selectors.floor).forEach(function(floor) {
+      floor.addEventListener('mouseover', function() {
+        hideFloor(floor);
+      });
+      floor.addEventListener('mouseleave', function() {
+        showFloor(floor);
+      });
+    }); 
 
     // Event listeners for 'selectors.object'
     document.querySelectorAll(selectors.object).forEach(function(object) {
@@ -39,7 +50,7 @@ const Iso = (function() {
 
   };
 
-  const highlightIso = function(object) {
+  const highlightIso = function(object, moveSiblings = true) {
     // get data set
     const objectData = object.dataset;
 
@@ -49,6 +60,20 @@ const Iso = (function() {
     // add class '.is-active.is-available' to iso item if it exists
     if (!iso) return;
     iso.classList.add('is-active', objectData.objectState === 'available' ? 'is-available' : 'is-taken');
+
+
+    if (moveSiblings) {
+      // Get the parent <g> element for the object
+      const parent = iso.parentElement;
+
+      // find all siblings of the parent <g> element that are after it
+      const nextSiblings = getNextSiblings(parent);
+
+      // add styles to translate the parent <g> elements siblings
+      nextSiblings.forEach(function(sibling) {
+        sibling.classList.add('is-up')
+      });
+    }
   };
 
   const hightlightRow = function(iso) {
@@ -63,6 +88,17 @@ const Iso = (function() {
   const clearIso = function() {
     document.querySelectorAll(selectors.iso).forEach(function(iso) {
       iso.classList.remove('is-active', 'is-available', 'is-taken');
+      // Get the parent <g> element for the isoItem
+      const parent = iso.parentElement;
+
+      // find all siblings (before and after) of the parent <g> element
+      const siblings = getAllSiblings(parent);
+
+      // remove all instances of the is-up and is-down classes
+      parent.classList.remove('is-up');
+      siblings.forEach(function(sibling) {
+        sibling.classList.remove('is-up');
+      });
     });
   };
 
@@ -70,6 +106,61 @@ const Iso = (function() {
     document.querySelectorAll(selectors.object).forEach(function(object) {
       object.classList.remove('is-active');
     });
+  };
+
+  const hideFloor = (floor) =>  {
+    // find all siblings of the parent <g> element that are after it
+    const nextSiblings = getNextSiblings(floor);
+
+    // add styles to translate the parent <g> elements siblings
+    nextSiblings.forEach(function(sibling) {
+      sibling.classList.add('is-up')
+    });
+  };
+
+  const showFloor = (floor) =>  {
+    // find all siblings of the parent <g> element that are after it
+    const nextSiblings = getNextSiblings(floor);
+
+    // add styles to translate the parent <g> elements siblings
+    nextSiblings.forEach(function(sibling) {
+      sibling.classList.remove('is-up')
+    });
+  };
+
+  const getNextSiblings = (parent) => {
+    const siblings = [];
+    let nextSibling = parent.nextElementSibling;
+    while (nextSibling) {
+      siblings.push(nextSibling);
+      nextSibling = nextSibling.nextElementSibling;
+    }
+    return siblings;
+  };
+
+  const getPreviousSiblings = (parent) => {
+    const previousSiblings = [];
+    let previousSibling = parent.previousElementSibling;
+    while (previousSibling) {
+      previousSiblings.push(previousSibling);
+      previousSibling = previousSibling.previousElementSibling;
+    }
+    return previousSiblings;
+  };
+
+  const getAllSiblings = (parent) => {
+    const siblings = [];
+    let nextSibling = parent.nextElementSibling;
+    while (nextSibling) {
+      siblings.push(nextSibling);
+      nextSibling = nextSibling.nextElementSibling;
+    }
+    let previousSibling = parent.previousElementSibling;
+    while (previousSibling) {
+      siblings.push(previousSibling);
+      previousSibling = previousSibling.previousElementSibling;
+    }
+    return siblings;
   };
 
   return {

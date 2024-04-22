@@ -160,3 +160,15 @@
 [data-object].is-active {
   @apply !bg-taupe !bg-opacity-20;
 }
+
+/* Floor classes */
+[data-iso-floor] {
+  @apply transition-transform duration-300;
+}
+.is-up {
+  @apply transform -translate-y-[16%] transition-transform duration-300;
+}
+
+.is-down {
+  @apply transform translate-y-[16%] transition-transform duration-300;
+}
