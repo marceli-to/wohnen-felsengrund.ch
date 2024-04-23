@@ -4,7 +4,7 @@ blueprint: page
 title: Projekt
 debug: false
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1713892936
+updated_at: 1713893143
 template: projekt
 page_elements:
   -
@@ -35,11 +35,6 @@ page_elements:
       -
         id: lvcnkwh4
         image: galerie/wohnen-felsengrund-baufortschritt-5.jpg
-        type: image
-        enabled: true
-      -
-        id: lvcnl02e
-        image: galerie/wohnen-felsengrund-baufortschritt-6.jpg
         type: image
         enabled: true
       -
