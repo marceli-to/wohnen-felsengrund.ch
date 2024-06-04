@@ -30,7 +30,7 @@
               {{ space_basement }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-right" }}
-              {{ price | format_number(0, '.', '\'') }}
+              {{ if state == 'available' }} {{ price | format_number(0, '.', '\'') }} {{ /if }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
               <a href="/assets/downloads/wohnen-felsengrund-untergeschoss.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">

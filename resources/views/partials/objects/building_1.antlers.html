@@ -31,10 +31,10 @@
               {{ space_basement }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-right" }}
-              {{ price | format_number(0, '.', '\'') }}
+              {{ if state == 'available' }} {{ price | format_number(0, '.', '\'') }} {{ /if }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
-              <a href="/assets/downloads/wohnen-felsengrund-wohnung_{{ number }}.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
+              <a href="/assets/downloads/wohnen-felsengrund-{{ slug }}.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
                 {{ partial:icons/download }}
               </a>
             {{ /partial:components/table/tcell }}
