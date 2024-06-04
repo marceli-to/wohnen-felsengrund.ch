@@ -63,8 +63,8 @@ tabs:
             handle: floor
             field:
               options:
-                ug: 'UG'
-                eg: 'EG'
+                ug: UG
+                eg: EG
                 1.og: '1. OG'
                 2.og: '2. OG'
               taggable: false
@@ -181,6 +181,18 @@ tabs:
               replicator_preview: true
               hide_display: false
               default: available
+          -
+            handle: price_on_request
+            field:
+              default: false
+              type: toggle
+              display: 'Preis auf Anfrage'
+              icon: toggle
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
           -
             handle: title
             field:

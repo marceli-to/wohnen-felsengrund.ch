@@ -21,7 +21,7 @@
             {{ partial:components/table/tcell }}
               {{ rooms }}
             {{ /partial:components/table/tcell }}
-            {{ partial:components/table/tcell class="text-right" }}
+            {{ partial:components/table/tcell class="text-right pr-8" }}
               {{ space }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell  class="text-right hidden sm:table-cell" }}
@@ -31,7 +31,13 @@
               {{ space_basement }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-right" }}
-              {{ if state == 'available' }} {{ price | format_number(0, '.', '\'') }} {{ /if }}
+              {{ if state == 'available' }}
+                {{if !price_on_request }} 
+                  {{ price | format_number(0, '.', '\'') }} 
+                {{ else }}
+                  auf Anfrage
+                {{ /if }}
+              {{ /if }}
             {{ /partial:components/table/tcell }}
             {{ partial:components/table/tcell class="text-center" }}
               <a href="/assets/downloads/wohnen-felsengrund-{{ slug }}.pdf" target="_blank" title="Download Grundriss Objekt {{ number }}">
