@@ -4,8 +4,8 @@ email:
   -
     id: lv2hk7hm
     to: m@marceli.to
-    from: no-reply@wohnen-felsengrund.ch.local
-    reply_to: no-reply@wohnen-felsengrund.ch.local
+    from: no-reply@wohnen-felsengrund.ch
+    reply_to: no-reply@wohnen-felsengrund.ch
     subject: 'Kontaktformular wohnen-felsengrund.ch'
     mailer: smtp
     html: email/html/contact
