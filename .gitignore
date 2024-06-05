@@ -25,5 +25,6 @@ INSTALL.txt
 content/
 public/assets
 resources/users
+resources/forms
 users
 storage/forms/contact_form
