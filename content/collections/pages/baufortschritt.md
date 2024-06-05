@@ -22,26 +22,6 @@ page_elements:
         type: image
         enabled: true
       -
-        id: lvxyyqzx
-        image: galerie/wohnen-felsengrund-baufortschritt-15.jpg
-        type: image
-        enabled: true
-      -
-        id: lvxz1g8r
-        image: galerie/wohnen-felsengrund-baufortschritt-14.jpg
-        type: image
-        enabled: true
-      -
-        id: lvxz1nfj
-        image: galerie/wohnen-felsengrund-baufortschritt-13.jpg
-        type: image
-        enabled: true
-      -
-        id: lvxz1x6q
-        image: galerie/wohnen-felsengrund-baufortschritt-1.jpg
-        type: image
-        enabled: true
-      -
         id: lvxz25a7
         image: galerie/wohnen-felsengrund-baufortschritt-18.jpg
         type: image
@@ -121,11 +101,31 @@ page_elements:
         image: galerie/wohnen-felsengrund-baufortschritt-5.jpg
         type: image
         enabled: true
+      -
+        id: lvxz1g8r
+        image: galerie/wohnen-felsengrund-baufortschritt-14.jpg
+        type: image
+        enabled: true
+      -
+        id: lvxyyqzx
+        image: galerie/wohnen-felsengrund-baufortschritt-15.jpg
+        type: image
+        enabled: true
+      -
+        id: lvxz1nfj
+        image: galerie/wohnen-felsengrund-baufortschritt-13.jpg
+        type: image
+        enabled: true
+      -
+        id: lvxz1x6q
+        image: galerie/wohnen-felsengrund-baufortschritt-1.jpg
+        type: image
+        enabled: true
     type: gallery
     enabled: true
 show_maps: true
 debug: false
 template: baufortschritt
 updated_by: c2f8321e-be41-4d83-b9ee-8136dba46b39
-updated_at: 1717505755
+updated_at: 1717592868
 ---
