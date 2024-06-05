@@ -16,7 +16,7 @@
 
     {{ /partial:layout/grid }}
 
-
+    {{ nocache }}
     {{ form:contact_form class="mt-20 md:mt-40 max-w-5xl" }}
 
       {{ if errors }}
@@ -71,6 +71,7 @@
     
     
     {{ /form:contact_form }}
+    {{ /nocache }}
 
   {{ /partial:layout/inner }}
 
