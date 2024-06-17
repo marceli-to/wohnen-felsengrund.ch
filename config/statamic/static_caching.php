@@ -77,11 +77,17 @@ return [
 
     'invalidation' => [
 
-        'class' => null,
+      'class' => null,
 
-        'rules' => [
-            //
+      'rules' => [
+        'collections' => [
+          'pages' => [
+            'urls' => [
+              '/*',
+            ]
+          ],
         ],
+      ],
 
     ],
 
