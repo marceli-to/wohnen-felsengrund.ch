@@ -80,13 +80,13 @@ return [
       'class' => null,
 
       'rules' => [
-        'collections' => [
-          'pages' => [
-            'urls' => [
-              '/*',
-            ]
-          ],
-        ],
+        // 'collections' => [
+        //   'pages' => [
+        //     'urls' => [
+        //       '/*',
+        //     ]
+        //   ],
+        // ],
       ],
 
     ],
