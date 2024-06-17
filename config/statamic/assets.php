@@ -120,7 +120,7 @@ return [
           'gallery-webp' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal', 'fm' => 'webp'],
           'gallery' => ['w' => 768, 'h' => 480, 'q' => 90, 'fit' => 'crop_focal'],
           
-          'max_upload_size' => ['w' => 4000, 'h' => 4000, 'fit' => 'max'],
+          'max_upload_size' => ['w' => 2500, 'h' => 2500, 'fit' => 'max'],
 
         ],
 
