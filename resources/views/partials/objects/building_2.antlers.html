@@ -8,7 +8,7 @@
     <h2 class="text-white text-md md:text-md mb-12">Haus 2 – Pfaffbergstrasse 4</h2>
     <h3 class="text-white normal-case mb-8">Wohnungen</h3>
     {{ collection from="objects" as="objects" type:is="wohnung" building:is="building-2" }}
-      {{ partial:components/table/table class="mb-40 lg:mb-80" }}
+      {{ partial:components/table/table }}
         {{ partial:components/table/thead }}
         {{ objects }}
           {{ partial:components/table/trow filterable="true" number="{{ number }}" state="{{ state }}" rooms="{{ rooms }}" floor="{{ floor }}" building="2" }}
@@ -59,6 +59,7 @@
           {{ /partial:components/table/trow }}
         {{ /objects }}
       {{ /partial:components/table/table }}
+      <p class="mt-5 lg:mt-15 !mb-40 lg:!mb-80">Bruttowohnfläche = Gesamte Innenfläche inkl. den Innenwänden sowie inkl. Mitte Aussenwände</p>
     {{ /collection }}
   {{ /partial:layout/span }}
 {{ /partial:layout/grid }}

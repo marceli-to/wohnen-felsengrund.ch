@@ -7,7 +7,7 @@
   {{ partial:layout/span class="!col-span-full lg:!col-span-7 xl:!col-span-6" }}
     <h2 class="text-base md:text-md text-white normal-case mb-8">Kellerräume</h2>
     {{ collection from="objects" as="objects" type:is="keller" }}
-      {{ partial:components/table/table class="mb-40 lg:mb-80" }}
+      {{ partial:components/table/table }}
         {{ partial:components/table/thead type="basement" }}
         {{ objects }}
           {{ partial:components/table/trow filterable="false" }}
@@ -52,6 +52,7 @@
           {{ /partial:components/table/trow }}
         {{ /objects }}
       {{ /partial:components/table/table }}
+      <p class="mt-5 lg:mt-15 !mb-40 lg:!mb-80">Bruttowohnfläche = Gesamte Innenfläche inkl. den Innenwänden sowie inkl. Mitte Aussenwände</p>
     {{ /collection }}
   {{ /partial:layout/span }}
 {{ /partial:layout/grid }}
